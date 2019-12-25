@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>app下载</title>
-</head>
-<body>
-<p><a href="app/wol.apk">下载</a></p>
-</body>
+	<head>
+		<meta charset="utf-8" />
+		<title>安全下载</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/css.css"/>
+	</head>
+	<body>
+		<div class="warp">
+			<div class="box">
+				<div class="logo"></div>
+				<center class="logo_txt">smartlink for ios</center>
+				<div style="margin-top: 40px;"></div>
+				<center style="padding: 5px 35px 5px 35px;">
+					<a href="javascript:void(0)" onclick="downloadClientApp();">安全下载</a>
+				</center>
+				<div class="zhu">
+					注：如果点击下载按钮无效，请点击右上角的<img src="img/btn.png" alt="" width="20px" style="margin: 0 5px 0 5px;">按钮，然后选择在浏览器中打开。
+				</div>
+			</div>
+		</div>
+		<script>
+			var downloadClientApp = function() {
+				// 在此用到配置文件(Mytest.plist)的外部链接
+				window.location.href='itms-services:///?action=download-manifest&url=https://smartlinkapp.github.io/smartlink.plist';
+			}
+		</script>
+	</body>
 </html>
