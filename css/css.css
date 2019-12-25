@@ -1,0 +1,27 @@
+html,body{
+	padding: 0;margin: 0;background: #ededed;
+}
+.warp{
+	margin: 0 auto;padding:15px;
+}
+.box{
+	box-sizing: border-box;
+	padding:30px 15px 10px 15px;background: #fff;
+	width: 100%;
+}
+.logo{
+	width: 80px;background-image: url(../img/logo.png); background-repeat: no-repeat;
+	height: 100px;background-size: contain;margin: 0 auto;
+}
+.logo_txt{
+	color: #666;font-size: 14px;
+}
+a{
+	text-decoration: none;
+	background: #42c44a;color:#fff;
+	display: block;line-height: 35px;
+	border-radius: 5px;
+}
+.zhu{
+	background: #a7a3a2;font-size: 14px;color:#ffffff;padding: 10px;line-height: 25px;margin-top: 15px;border-radius: 10px;
+}
